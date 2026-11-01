@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nate Hinaman — Software Engineer</title>
+  <meta name="description" content="Nate Hinaman, software engineer in Cincinnati building web apps with Angular and .NET.">
+  <style>
+    :root {
+      --bg: #221E1C;
+      --panel: #2E2826;
+      --ink: #F1E9E1;
+      --muted: #ADA29A;
+      --red: #F0A9A6;
+      --steel: #7E726B;
+      --band: #9A3A38;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+    main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
+    a { color: var(--red); text-underline-offset: 3px; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 2px; }
+
+    header h1 {
+      font-size: clamp(2.8rem, 10vw, 5.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 0 0 1.5rem;
+    }
+    header h1 span {
+      background: linear-gradient(transparent 60%, var(--band) 60%, var(--band) 92%, transparent 92%);
+    }
+    .intro { font-size: 1.25rem; color: var(--muted); max-width: 34rem; margin: 0; }
+    .strap { height: 10px; margin-top: 2.5rem; background: var(--red); }
+
+    section { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 2px solid var(--panel); }
+    h2 { font-size: 1.35rem; margin: 0 0 1rem; letter-spacing: -0.01em; }
+
+    .work { list-style: none; padding: 0; margin: 0; }
+    .work li { padding: 1rem; border-left: 4px solid var(--red); margin-bottom: 0.75rem; background: var(--panel); }
+    .work strong { display: block; font-size: 1.1rem; }
+    .work p { margin: 0.25rem 0 0; color: var(--muted); }
+
+    .stack { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+    .stack li { border: 1.5px solid var(--steel); border-radius: 999px; padding: 0.2rem 0.85rem; font-size: 0.95rem; }
+
+    footer { margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1><span>Nate</span><br>Hinaman</h1>
+      <p class="intro">I’m a software engineer in Cincinnati. I build web apps with Angular on the front end and .NET behind it, and I’ve been doing it for three years.</p>
+      <div class="strap" aria-hidden="true"></div>
+    </header>
+
+    <section aria-labelledby="work">
+      <h2 id="work">Things I’ve built</h2>
+      <ul class="work">
+        <li>
+          <strong>Project one</strong>
+          <p>A sentence about what it does and who uses it. Link to it or the repo if you can.</p>
+        </li>
+        <li>
+          <strong>Project two</strong>
+          <p>What problem it solved, and the part you’re proudest of.</p>
+        </li>
+        <li>
+          <strong>Project three</strong>
+          <p>Side projects count too — something you made because you wanted it to exist.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="tools">
+      <h2 id="tools">What I work with</h2>
+      <ul class="stack">
+        <li>Angular</li>
+        <li>TypeScript</li>
+        <li>C#</li>
+        <li>.NET</li>
+        <li>SQL Server</li>
+        <li>REST APIs</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Get in touch</h2>
+      <p>Email me at <a href="mailto:hello@natehinaman.com">hello@natehinaman.com</a>, or find me on <a href="https://github.com/nute6">GitHub</a> and <a href="https://www.linkedin.com/in/natehinaman/">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Nate Hinaman</p>
+    </footer>
+  </main>
+</body>
+</html>
