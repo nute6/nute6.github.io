@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nate Hinaman — Software Engineer</title>
-  <meta name="description" content="Nate Hinaman, software engineer in Cincinnati building web apps with Angular and .NET.">
+  <meta name="description" content="Nate Hinaman, software engineer in Cincinnati building web apps for clinical research with Angular and .NET.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nute6.github.io/">
+  <meta property="og:title" content="Nate Hinaman — Software Engineer">
+  <meta property="og:description" content="Software engineer in Cincinnati building web apps for clinical research with Angular and .NET.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23221E1C'/><text x='16' y='22' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='15' font-weight='800' fill='%23F0A9A6'>NH</text></svg>">
   <style>
     :root {
       --bg: #221E1C;
@@ -25,7 +30,7 @@
       font-size: 1.0625rem;
       line-height: 1.6;
     }
-    main { max-width: 44rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
+    main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 2rem; }
     a { color: var(--red); text-underline-offset: 3px; }
     a:hover { color: var(--ink); }
     a:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 2px; }
@@ -38,12 +43,12 @@
       margin: 0 0 1.5rem;
     }
     header h1 span {
+      padding-right: 0.12em;
       background: linear-gradient(transparent 60%, var(--band) 60%, var(--band) 92%, transparent 92%);
     }
     .intro { font-size: 1.25rem; color: var(--muted); max-width: 34rem; margin: 0; }
-    .strap { height: 10px; margin-top: 2.5rem; background: var(--red); }
 
-    section { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 2px solid var(--panel); }
+    section { margin-top: 2.5rem; padding-top: 1.25rem; border-top: 2px solid var(--panel); }
     h2 { font-size: 1.35rem; margin: 0 0 1rem; letter-spacing: -0.01em; }
 
     .work { list-style: none; padding: 0; margin: 0; }
@@ -54,18 +59,39 @@
     .stack { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
     .stack li { border: 1.5px solid var(--steel); border-radius: 999px; padding: 0.2rem 0.85rem; font-size: 0.95rem; }
 
-    footer { margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
+    footer { margin-top: 2.5rem; color: var(--muted); font-size: 0.9rem; text-align: center; }
+
+    @media (min-width: 60rem) {
+      main {
+        max-width: 68rem;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+          "header projects"
+          "skills projects"
+          "contact projects"
+          "footer footer";
+        column-gap: 4rem;
+      }
+      header { grid-area: header; }
+      .projects { grid-area: projects; margin-top: 0; padding-top: 0; border-top: 0; display: flex; flex-direction: column; }
+      .projects .work { flex: 1; display: flex; flex-direction: column; gap: 0.75rem; }
+      .projects .work li { flex: 1; margin-bottom: 0; }
+      .skills { grid-area: skills; }
+      .contact { grid-area: contact; align-self: end; }
+      .contact p { margin-bottom: 0; }
+      footer { grid-area: footer; }
+    }
   </style>
 </head>
 <body>
   <main>
     <header>
       <h1><span>Nate</span><br>Hinaman</h1>
-      <p class="intro">I’m a software engineer in Cincinnati building web apps for clinical research, with Angular on the front end and .NET behind it. I’ve been doing it for three years.</p>
-      <div class="strap" aria-hidden="true"></div>
-    </header>
+      <p class="intro">I’m a software engineer in Cincinnati, building web apps for clinical research since 2023 with Angular on the front end and .NET behind it.</p>    </header>
 
-    <section aria-labelledby="work">
+    <section class="projects" aria-labelledby="work">
       <h2 id="work">Things I’ve built</h2>
       <ul class="work">
         <li>
@@ -83,7 +109,7 @@
       </ul>
     </section>
 
-    <section aria-labelledby="tools">
+    <section class="skills" aria-labelledby="tools">
       <h2 id="tools">What I work with</h2>
       <ul class="stack">
         <li>Angular</li>
@@ -99,7 +125,7 @@
       </ul>
     </section>
 
-    <section aria-labelledby="contact">
+    <section class="contact" aria-labelledby="contact">
       <h2 id="contact">Get in touch</h2>
       <p>Email me at <a href="mailto:natehinaman@gmail.com">natehinaman@gmail.com</a>, or find me on <a href="https://www.linkedin.com/in/natehinaman/">LinkedIn</a>.</p>
     </section>
