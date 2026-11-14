@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nate Hinaman — Résumé</title>
+  <meta name="robots" content="noindex">
+  <style>
+    @page { size: Letter; margin: 0.5in 0.6in; }
+    :root { --ink: #221E1C; --muted: #5E544E; --band: #9A3A38; --rule: #D9CFC8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-size: 9.6pt;
+      line-height: 1.38;
+    }
+    h1 { font-size: 24pt; line-height: 1; letter-spacing: -0.02em; font-weight: 800; margin: 0 0 4pt; }
+    .contact { color: var(--muted); margin: 0; }
+    .contact a { color: inherit; text-decoration: none; }
+    h2 {
+      font-size: 10pt;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--band);
+      margin: 12pt 0 5pt;
+      padding-bottom: 2pt;
+      border-bottom: 1.2pt solid var(--rule);
+    }
+    p { margin: 0; }
+    .row { display: flex; justify-content: space-between; gap: 12pt; }
+    .row + .row { margin-top: 0; }
+    .entry + .entry { margin-top: 8pt; }
+    .org { font-weight: 700; }
+    .when { color: var(--muted); white-space: nowrap; }
+    .role { font-style: italic; }
+    ul { margin: 3pt 0 0; padding-left: 13pt; }
+    li { margin-bottom: 2pt; }
+    li::marker { color: var(--band); }
+    .skills p + p { margin-top: 2pt; }
+    .skills b { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nate Hinaman</h1>
+    <p class="contact">Software Engineer · Cincinnati, OH · <a href="mailto:natehinaman@gmail.com">natehinaman@gmail.com</a> · <a href="https://www.linkedin.com/in/natehinaman/">linkedin.com/in/natehinaman</a> · <a href="https://nute6.github.io/">nute6.github.io</a></p>
+  </header>
+
+  <h2>Summary</h2>
+  <p>Full-stack software engineer with 3+ years building clinical research web apps in Angular, .NET and SQL Server, from first commit through validation, release and production support. Currently earning an MBA at the University of Cincinnati (4.0 GPA) with a certificate in AI in Business.</p>
+
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="row"><span><span class="org">Medpace</span> · Cincinnati, OH</span><span class="when">June 2023 – Present</span></div>
+    <p class="role">Software Engineer</p>
+    <ul>
+      <li>Closed 382 of 386 assigned work items across six clinical trial applications and 19 repositories, working across Angular front ends, .NET APIs, SQL Server and SSRS.</li>
+      <li>Built a pre-screening app that research sites use to log and track potential trial participants, from its foundations through production and pilot: role-based access, the patient log and SSRS reporting. Led its major Angular upgrade.</li>
+      <li>Built most of the email and notification system shared by three applications, using SendGrid and a message queue, with bounce handling, direct links and overdue alerts.</li>
+      <li>Took an Outlook add-in to production that files emails against site contacts and indexes them to the trial master file; sped up its on-send processing and fixed its security vulnerabilities.</li>
+      <li>Made an Azure Data Factory import safe to re-run with SQL MERGE stored procedures, and fixed temporal-table and DACPAC deployment failures.</li>
+      <li>Added a page for comparing three or more enrollment forecasts side by side with graphs, and fixed 40 bugs in one release, including 3 that produced wrong projections.</li>
+      <li>Built the reporting and overdue alerts for an eligibility review workflow, including report versioning.</li>
+      <li>Wrote requirements, assessed feature risk, ran release steps and fixed defects found in validation; trained engineers, validation engineers and end users.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><span><span class="org">Great American Insurance Group</span> · Cincinnati, OH</span><span class="when">June 2022 – November 2022</span></div>
+    <p class="role">Underwriter Desktop and AIE Intern</p>
+    <ul>
+      <li>Built full-stack features in Java, JavaScript, HTML and SQL in a large codebase with legacy code.</li>
+      <li>Researched APIs with Spring WebFlux and Postman, using test-driven and Agile development.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="row"><span><span class="org">Ohio National Financial Services</span> · Cincinnati, OH</span><span class="when">July 2021 – August 2021</span></div>
+    <p class="role">Enterprise Risk Management Intern</p>
+    <ul>
+      <li>Supported the actuarial team with SQL queries, Excel models and VBA automation.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row"><span><span class="org">University of Cincinnati</span> · Online</span><span class="when">Expected August 2028</span></div>
+    <p class="role">Master of Business Administration, with a certificate in AI in Business · GPA 4.0</p>
+  </div>
+  <div class="entry">
+    <div class="row"><span><span class="org">The Ohio State University</span> · Columbus, OH</span><span class="when">May 2023</span></div>
+    <p class="role">Bachelor of Science in Computer Science and Engineering</p>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> TypeScript, C#, SQL, JavaScript, Java, Python, HTML, CSS</p>
+    <p><b>Frameworks:</b> Angular, NgRx, .NET, Spring</p>
+    <p><b>Data and integration:</b> SQL Server, SSRS, Azure Data Factory, DACPAC, REST APIs, SendGrid, Office add-ins</p>
+    <p><b>Tools and practices:</b> Git, GitHub, Azure DevOps, Postman, Agile, test-driven development, software validation</p>
+  </div>
+</body>
+</html>

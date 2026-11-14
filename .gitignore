@@ -11,3 +11,8 @@ desktop.ini
 # Local scratch
 *.log
 *.tmp
+
+# Private source material (internal work details)
+HinamanNathan*.pdf
+Nate Hinaman*Summary.docx
+Nate_Hinaman_Contributions.xlsx
